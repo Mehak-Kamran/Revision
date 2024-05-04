@@ -89,10 +89,44 @@ while(i<=20){
     id:2345,
     rank:"manager"
  }
- console.log(employee);
- console.log(employee.id)
+ //console.log(employee);
+ //console.log(employee.id)
  //change obj key value
  employee.rank="Senior manager";
- console.log(employee.rank)
+ //console.log(employee.rank)
+
+ //copy refrence value
+ main_medince_list=["Pnadol","Risek","Calpol"]
+ updated_medicine_list=[...main_medince_list]
+ updated_medicine_list.pop()
+ //console.log(main_medince_list,updated_medicine_list)
+
+ //truthy falsey value
+ if (-1){
+    //console.log("hey")
+ }
+ else{
+    //console.log("bye")
+ }
+
+//for each
+//used for arrays 
+name=["mark","andy","bobby"];
+name.forEach(function call(personname){
+    //console.log("hello",personname,"Welcom!");
+})
+//for in
+//used for objects
+let Andy={
+    class:2,
+    transport:"Car",
+    interest:"cycling"
+}
+for(key in Andy){
+    //console.log(Andy[key])
+}
+delete Andy.class
+console.log(Andy)
+
 
 
