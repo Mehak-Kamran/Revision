@@ -3,7 +3,19 @@
 }
 .heading{
      color: red;
+     text-align: center;
+     text-transform: capitalize;
 }
 button{
      background-color: green;
+}
+
+body{
+     font-family:'Times New Roman';
+}
+.outer{
+font-size: 25px;
+}
+.inner{
+     font-size: 10px;
 }
