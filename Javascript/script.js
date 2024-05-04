@@ -125,8 +125,16 @@ let Andy={
 for(key in Andy){
     //console.log(Andy[key])
 }
+//delete in object
 delete Andy.class
-console.log(Andy)
+//console.log(Andy)
+
+//DOWHILE LOOP
+let variable=2;
+do{
+    console.log(variable);
+    variable++;
+}while(variable<12)
 
 
 
