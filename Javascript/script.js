@@ -132,9 +132,61 @@ delete Andy.class
 //DOWHILE LOOP
 let variable=2;
 do{
-    console.log(variable);
+    //console.log(variable);
     variable++;
 }while(variable<12)
+
+//higher order function
+a=[1,2];
+a.forEach(function abcd(){
+  console.log("This is higher order function ");
+})
+
+function yzb(){
+    return function xyz(){
+        console.log("this is higher order functions");
+    }
+}
+let t=yzb();
+t();
+
+//constructor function
+function car(color){
+    this.colour=color,
+    this.engineSpeed="fast",
+    this.automatic=true
+}
+
+let car1=new car("red");
+let car2=new car("green");
+let car3=new car("white");
+let car4=new car("black");
+
+//console.log(car1,car2,car3,car4)
+//console.log(car1.engineSpeed)
+
+//iife
+(function hij(){
+    console.log("This is immediate invoked function")
+})();
+
+//prototypal inheritance
+
+let bike={
+    wheel:2,
+    engine:true
+}
+
+let honda={
+    model:50002,
+    color:"black"
+}
+
+honda.__proto__=bike;
+//console.log(honda.engine)
+
+
+
 
 
 
