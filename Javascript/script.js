@@ -185,6 +185,39 @@ let honda={
 honda.__proto__=bike;
 //console.log(honda.engine)
 
+//this keyword 
+//value is diff in diff scopes
+
+//global
+console.log(this);//==>window
+
+//function scope
+let fun=()=>{
+    console.log(this);
+}
+fun();//==>window
+
+//method
+let obj={
+    sum:function(){
+        console.log(this)
+    },
+    name:"mark"
+}
+obj.sum();
+
+// bind call apply
+function minus(){
+    console.log(this);
+}
+let ob={
+    key:"name"
+}
+//minus.call(ob)//2,3
+//minus.apply(ob)//[2,3]
+let c=minus.bind(ob)
+c();
+
 
 
 
