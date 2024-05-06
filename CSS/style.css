@@ -32,9 +32,11 @@ font-size: 25px;
 .inner{
      font-size: 10px;
 } */
+
+
 /* position */
 
-.container{
+/* .container{
 
      
      width: 400px;
@@ -61,12 +63,43 @@ font-size: 25px;
      height: 100px;
      /* position: absolute;  */
      
-}
+/* }
 #box3{
      background-color: pink;
      width: 100px;
      height: 100px;
      /* position: absolute; */
+/* } */
+
+/* flex box */
+
+.container{
+
+     
+     width: 400px;
+     height: 400px;
+     background-color: beige;
+     display: flex;
+     justify-content: space-around; /*width */
+      align-items: end;     /*height */
+     
+     
 }
+#box1{
+     background-color: aqua;
+     width: 100px;
+     height: 100px;
+
+     
+}
+
+#box2{
+     
+     background-color: red;
+     width: 100px;
+     height: 100px;
+     
+     
+ }
 
 
