@@ -216,7 +216,10 @@ let ob={
 //minus.call(ob)//2,3
 //minus.apply(ob)//[2,3]
 let c=minus.bind(ob)
-c();
+//c();
+
+
+
 
 
 
