@@ -9,6 +9,7 @@ app.set("view engine","ejs");
 //css using middleware
 app.use(express.static('./public'));
 
+//routes
 app.get('/', function (req, res) {
   res.render('index')
 })
@@ -26,7 +27,7 @@ app.get('/error', function (req, res,next) {
     throw Error("something went wrong");
   })
 
-
+//error handler middleware
 app.use(function errorHandler (err, req, res, next) {
     if (res.headersSent) {
       return next(err)
@@ -35,7 +36,7 @@ app.use(function errorHandler (err, req, res, next) {
     res.render('error', { error: err })
   });
 
-
+//listening
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
